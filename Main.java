@@ -37,6 +37,11 @@ public class Main {
 
         String string = "f";
         System.out.println(string.toUpperCase());
+
+        System.out.println(y + 
+            numero + numeroGrande + 
+            numeroMoltoGrande +  ilFloat +
+            ilChar + z + name);
     }
 
 
