@@ -19,6 +19,9 @@ public class aritmetica {
         a --; //decremento di 1
         System.out.println(a);
 
-
+        System.out.println(Math.min(5, 10));
+        System.out.println(Math.abs(-55));
+        System.out.println(Math.pow(55,2));
+        System.out.println(Math.PI);
     }
 }
