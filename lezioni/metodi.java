@@ -13,8 +13,6 @@ public class metodi {
 
     }
 
-
-
     static void calcolatrice() {
 
         double result = 0;
@@ -48,8 +46,26 @@ public class metodi {
 
         System.out.println("Il risultato è " + result);
     }
-    public static void main(String[] args) {
-        calcolatrice();
 
+static int addizione(int a, int b) {
+    return a + b;
+}
+
+
+//OVERLOAD METHOD
+
+static int sottrazione(int a, int b) {
+    return a - b;
+}
+
+static double sottrazione(double a, double b) {
+    return a - b;  
+}
+
+    public static void main(String[] args) {
+        //calcolatrice();
+
+        int risultato = addizione(4,5);
+        System.out.println(risultato);
     }
 }

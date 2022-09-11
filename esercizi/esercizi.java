@@ -1,6 +1,5 @@
 package esercizi;
 import java.util.Scanner;
-
 public class esercizi {
    
 static void TuttiPositiviPari() {
@@ -26,8 +25,8 @@ altrimenti stampa "NO". Risolvere questo esercizio senza usare array
     if (par) System.out.println("Tutti positivi e pari");
         else System.out.println("NO");
 
-}
-   
+}  
+
 static void ContinuaFino() {
     /**
          * Esercizio 2.2: Scrivere un programma ContinuaFino che chiede all’utente di inserire una sequenza di
@@ -119,12 +118,68 @@ static void Ripetizioni() {
     System.out.println(numeroTotale);
 }
 
+static void Contrario() {
+
+
+    
+    // Esercizio 3.1: Scrivere un programma Contrario che chiede all’utente di inserire una stringa e la
+    // stampa al contrario. Per esempio, se si immette la stringa "Viva Java", il programma stampa "avaJ aviV"
+
+
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Inserisci stringa");
+    String valore = scanner.nextLine();
+    String valoreFinale = "";
+
+    for (int i = valore.length() -1 ; i >= 0; i --) {
+        valoreFinale += valore.charAt(i);
+    }
+    System.out.println(valoreFinale);
+}
+
+static void SoloVocali() {
+//     Esercizio 3.2: Scrivere un programma SoloVocali che chiede all’utente di inserire una stringa e ne
+// stampa le sole vocali. Per esempio, se si immette la stringa "Viva Java", il programma stampa "iaaa".
+
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Inserisci una stringa");
+    String valore = scanner.nextLine();
+    String risultato = "";
+
+    for ( int i = 0; i < valore.length(); i ++){
+      
+         char lettera = valore.charAt(i);
+
+        switch(lettera) {
+            case 'a':
+                risultato += lettera;
+                break;
+            case 'e':
+                risultato += lettera;
+                break;
+            case 'i':
+                risultato += lettera;
+                break;
+            case 'o':
+                risultato += lettera;
+                break;
+            case 'u':
+                risultato += lettera;
+                break;
+        }    
+    }
+    System.out.println(risultato);
+}
+
+
 public static void main(String[] args) {
         //TuttiPositiviPari();
         //ContinuaFino();
         //PositivoNegativo();
         //MediaMultipliDiTre();
-        Ripetizioni();
+        //Ripetizioni();
+        //Contrario();
+        SoloVocali();
 
     }
 }
