@@ -1,4 +1,5 @@
-package lezioni.arrayObject;
+
+import lezioni.classe29.Persona;
 
 public class Persona {
     String name;
